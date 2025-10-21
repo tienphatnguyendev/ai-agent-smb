@@ -13,5 +13,5 @@ jobs:
       - name: Deploy to Perplexity
         uses: perplexity-ai/perplexity-action@v1
         with:
-          space-id: ${{ secrets.PERP_SPACE_ID }}
+          space-id: ${{ ai-agent-smb-T5.RSCUPQGCHbq02m2I5iA }}
           api-token: ${{ secrets.PERP_API_TOKEN }}
