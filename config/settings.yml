@@ -1,0 +1,6 @@
+app:
+  name: ai-agent-smb
+  version: 1.0.0
+  debug: false
+
+# Add your configuration here

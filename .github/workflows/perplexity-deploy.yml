@@ -1,0 +1,17 @@
+name: Deploy to Perplexity Space
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy to Perplexity
+        uses: perplexity-ai/perplexity-action@v1
+        with:
+          space-id: ${{ secrets.PERP_SPACE_ID }}
+          api-token: ${{ secrets.PERP_API_TOKEN }}

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-agent-smb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ai-agent-smb
+  template:
+    metadata:
+      labels:
+        app: ai-agent-smb
+    spec:
+      containers:
+      - name: ai-agent-smb
+        image: ai-agent-smb:latest
+        ports:
+        - containerPort: 8080
